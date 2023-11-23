@@ -1,0 +1,50 @@
+<!-- home.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Home</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    a {
+      text-decoration: none;
+      color: #4caf50;
+    }
+
+    a:hover {
+      color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to the Home Page</h1>
+    <% if (user) { %>
+      <p>Hello, <%= user %>!</p>
+      <a href="/auth/logout">Logout</a>
+    <% } else { %>
+      <p>Please <a href="/auth/login">login</a> or <a href="/auth/signup">signup</a>.</p>
+    <% } %>
+  </div>
+</body>
+</html>
