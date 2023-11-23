@@ -4,7 +4,7 @@ Group: 3
 Name: 
 SO KIT FUNG (12937533),Lai Chun Ho(12781405)
 
-Application link: https://s381f-project-memo-iwvn.onrender.com
+Application link:
 
 ********************************************
 # Login
